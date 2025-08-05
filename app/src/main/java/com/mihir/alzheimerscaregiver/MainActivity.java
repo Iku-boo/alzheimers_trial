@@ -2,6 +2,8 @@ package com.mihir.alzheimerscaregiver;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -86,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
                 // Show toast message (we'll replace this with actual navigation later)
                 showToast("Opening Medication Reminders...");
 
-                // TODO: Navigate to MedicationActivity
+                Intent intent = new Intent(MainActivity.this, MedicationActivity.class);
+                startActivity(intent);
                 // Intent intent = new Intent(MainActivity.this, MedicationActivity.class);
                 // startActivity(intent);
             }
