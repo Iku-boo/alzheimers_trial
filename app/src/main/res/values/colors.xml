@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern color palette for Alzheimer's caregiver app -->
+
+    <!-- Primary Colors -->
+    <color name="primary_color">#6366F1</color>
+    <color name="primary_dark">#4F46E5</color>
+    <color name="primary_light">#A5B4FC</color>
+
+    <!-- Background Colors -->
+    <color name="background_color">#F8FAFC</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Feature Colors (Modern & Accessible) -->
+    <color name="medication_color">#10B981</color>      <!-- Green for health -->
+    <color name="tasks_color">#3B82F6</color>          <!-- Blue for productivity -->
+    <color name="memory_color">#8B5CF6</color>         <!-- Purple for brain -->
+    <color name="photos_color">#F59E0B</color>         <!-- Orange for warmth -->
+    <color name="emergency_color">#EF4444</color>      <!-- Red for urgency -->
+    <color name="settings_color">#6B7280</color>       <!-- Gray for settings -->
+
+    <!-- Status Colors -->
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    <color name="info">#3B82F6</color>
+
+    <!-- Additional UI Colors -->
+    <color name="border_color">#E2E8F0</color>
+    <color name="shadow_color">#1E293B20</color>
+
+</resources>
