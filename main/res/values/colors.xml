@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern color palette for Alzheimer's caregiver app -->
+
+    <!-- Primary Colors -->
+    <color name="primary_color">#6366F1</color>
+    <color name="primary_dark">#4F46E5</color>
+    <color name="primary_light">#A5B4FC</color>
+
+    <!-- Background Colors -->
+    <color name="background_color">#F8FAFC</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Feature Colors (Modern & Accessible) -->
+    <color name="medication_color">#10B981</color>      <!-- Green for health -->
+    <color name="tasks_color">#3B82F6</color>          <!-- Blue for productivity -->
+    <color name="memory_color">#8B5CF6</color>         <!-- Purple for brain -->
+    <color name="photos_color">#F59E0B</color>         <!-- Orange for warmth -->
+    <color name="emergency_color">#EF4444</color>      <!-- Red for urgency -->
+    <color name="settings_color">#6B7280</color>       <!-- Gray for settings -->
+
+    <!-- Status Colors -->
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    <color name="info">#3B82F6</color>
+
+    <!-- Additional UI Colors -->
+    <color name="border_color">#E2E8F0</color>
+    <color name="shadow_color">#1E293B</color>
+
+    <color name="button_normal">#E0E0E0</color>
+    
+
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#FF9800</color>
+    <color name="secondary_dark">#F57C00</color>
+    <color name="secondary_light">#FFE0B2</color>
+
+    <!-- Basic Colors -->
+    <color name="gray">#9E9E9E</color>
+    <color name="light_gray">#F5F5F5</color>
+
+    <!-- Game-specific Colors -->
+
+    <color name="button_pressed">#E0E0E0</color>
+    <color name="button_disabled">#F5F5F5</color>
+
+    <!-- Overlay Colors -->
+    <color name="overlay_background">#80000000</color>
+
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF9800</color>
+
+    <!-- Face recognition specific colors -->
+    <color name="face_recognition_primary">#4CAF50</color>
+    <color name="face_recognition_accent">#FFC107</color>
+    <color name="face_recognition_error">#F44336</color>
+
+
+</resources>

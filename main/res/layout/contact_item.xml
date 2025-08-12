@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    android:backgroundTint="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Contact Avatar/Icon -->
+        <ImageView
+            android:id="@+id/contactIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_background_light"
+            android:src="@drawable/ic_person"
+            android:scaleType="center"
+            android:contentDescription="Contact icon"
+            app:tint="@color/primary_color" />
+
+        <!-- Contact Information -->
+        <LinearLayout
+            android:id="@+id/contactInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/contactIcon"
+            android:layout_toStartOf="@id/callButton"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <!-- Contact Name -->
+            <TextView
+                android:id="@+id/contactNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Dr. Sarah Johnson" />
+
+            <!-- Phone Number -->
+            <TextView
+                android:id="@+id/phoneNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="99009 99009" />
+
+        </LinearLayout>
+
+        <!-- Call Button -->
+        <ImageButton
+            android:id="@+id/callButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_phone"
+            android:contentDescription="Call contact"
+            android:padding="8dp"
+            app:tint="@color/primary_color" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

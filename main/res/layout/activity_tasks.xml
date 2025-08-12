@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".TasksActivity">
+
+    <!-- Main content container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tasks_color"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Go back"
+                android:padding="12dp"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_marginEnd="16dp"
+                app:tint="@color/white" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Daily Tasks"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <!-- Date and Time Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_background"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:elevation="2dp">
+
+            <!-- Today's Date -->
+            <TextView
+                android:id="@+id/todayDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today, Monday, January 15"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Current Time -->
+            <TextView
+                android:id="@+id/currentTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2:30 PM"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif" />
+
+        </LinearLayout>
+
+        <!-- Tasks Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:paddingBottom="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Your Tasks"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                 />
+
+            <!-- Tasks remaining counter -->
+            <TextView
+                android:id="@+id/tasksRemainingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 remaining"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:background="@drawable/rounded_background_light"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp" />
+
+        </LinearLayout>
+
+        <!-- Tasks RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tasksRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="20dp"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            tools:listitem="@layout/item_task" />
+
+    </LinearLayout>
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addTaskFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_add"
+        android:contentDescription="Add new task"
+        app:backgroundTint="@color/tasks_color"
+        app:tint="@color/white"
+        app:elevation="8dp"
+        app:pressedTranslationZ="12dp"
+        app:fabSize="normal" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
