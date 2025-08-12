@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"
+            android:textColor="@android:color/white"
+            android:background="?attr/selectableItemBackground"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Manage Faces"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Face Count -->
+    <TextView
+        android:id="@+id/tvFaceCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Registered Faces: 0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:layout_margin="8dp" />
+
+    <!-- Face List -->
+    <ListView
+        android:id="@+id/listViewFaces"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp" />
+
+    <!-- Clear All Button -->
+    <Button
+        android:id="@+id/btnClearAll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Clear All Faces"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="#F44336"
+        android:layout_margin="16dp"
+        android:elevation="2dp" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Your existing menu items -->
+
+    <item
+        android:id="@+id/action_face_recognition"
+        android:title="Face Recognition"
+        android:icon="@drawable/ic_face_recognition"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_manage_faces"
+        android:title="Manage Faces"
+        android:icon="@drawable/ic_people"
+        app:showAsAction="ifRoom" />
+
+    <!-- Divider -->
+    <group android:id="@+id/group_main_features">
+        <!-- Your existing menu items can go here -->
+
+    </group>
+
+    <!-- App Info Menu Items -->
+    <item
+        android:id="@+id/action_help"
+        android:title="Help"
+        android:icon="@drawable/ic_help"
+        app:showAsAction="never"
+        android:orderInCategory="900" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="About"
+        android:icon="@drawable/ic_info"
+        app:showAsAction="never"
+        android:orderInCategory="901" />
+
+
+</menu>
